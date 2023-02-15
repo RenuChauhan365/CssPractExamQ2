@@ -2,6 +2,7 @@
 body{
     margin-left: 20px;
     margin-right: 20px;
+  
 
 }
 
@@ -9,20 +10,16 @@ body{
 
     display: grid;
     grid-template-columns: auto auto auto;
-    /* justify-content: space-between; */
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-color: aliceblue;
     margin-bottom: 30px;
     margin-left: 30px;
-
+    height: 100vh;
 
 
 
   
 }
-
 
 .card{
     background-color: black;
@@ -45,23 +42,69 @@ body{
 
 
 
+/*  this is a media quary */
 
-@media only screen and (max-width){
-
+@media  screen and (max-width:600px){
     .container{
-
-        display: grid;
-        grid-template-columns:  auto;  
+    
+        grid-template-columns: auto; 
+        
     }
+
+    
+.card{
+    background-color: black;
+    color: white;
+    margin: 40px;
+    padding: 40px;
+    height: 20vh;
+    width: 17vw;
+    border-radius: 20px;
+    font-size: 13px;
+    justify-content: center;
+
 }
-@media only screen and (min-width){
+
+  
+   
+}
+
+
+@media only screen and (min-width:600px){
 
     .container{
-
-        display: grid;
+      
         grid-template-columns:  auto auto;  
+        box-sizing: border-box; 
     }
 
+    
+.card{
+    background-color: black;
+    color: white;
+    margin: 40px;
+    padding: 40px;
+    height: 20vh;
+    width: 17vw;
+    border-radius: 20px;
+    font-size: 18px;
+    justify-content: center;
+
+}
+
+
+    
+}
+
+
+
+@media    (min-width:768px) and  (min-width:968px) {
+
+    .container{
+      
+        grid-template-columns:  auto auto auto;  
+        box-sizing: border-box; 
+    }
 
 
     
